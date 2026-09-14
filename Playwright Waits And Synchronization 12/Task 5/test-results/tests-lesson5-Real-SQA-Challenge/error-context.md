@@ -1,0 +1,729 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: tests\lesson5.spec.js >> Real SQA Challenge
+- Location: tests\lesson5.spec.js:28:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('form').first().locator('input[name="phone"]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: https://dissertationhelper.de/
+          - img "Dissertation Helper Logo" [ref=e8]
+        - generic [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "Home" [ref=e13] [cursor=pointer]:
+                - /url: https://dissertationhelper.de/
+            - listitem [ref=e14]:
+              - link "About Us" [ref=e15] [cursor=pointer]:
+                - /url: about-us
+            - listitem [ref=e16]:
+              - button "Services" [ref=e17] [cursor=pointer]
+            - listitem [ref=e18]:
+              - link "Contact Us" [ref=e19] [cursor=pointer]:
+                - /url: contact-us
+            - listitem [ref=e20]:
+              - link "Reviews" [ref=e21] [cursor=pointer]:
+                - /url: reviews
+            - listitem [ref=e22]:
+              - link "Our Writers" [ref=e23] [cursor=pointer]:
+                - /url: our-writers
+          - link "Talk to Experts" [ref=e24] [cursor=pointer]:
+            - /url: javascript:void(Tawk_API.toggle())
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Dissertation Help Germany Trusted by 9 of 10 Students for Success" [level=1] [ref=e28]
+        - paragraph [ref=e29]: Get expert guidance from dissertation writing help Germany. From topic selection to final edits, we make your research journey easier, faster, and stress-free—helping you achieve academic success.
+        - list [ref=e31]:
+          - listitem [ref=e32]: Expert Academic Support
+          - listitem [ref=e34]: Stress-Free Dissertation Process
+          - listitem [ref=e36]: Unbeatable Price
+          - listitem [ref=e38]: 24/7 Customer Support
+        - generic [ref=e40]:
+          - link "Get A Free Quote" [ref=e41] [cursor=pointer]:
+            - /url: javascript:void(Tawk_API.toggle())
+          - link "Get Dissertation Help" [ref=e42] [cursor=pointer]:
+            - /url: contact-us
+      - generic [ref=e43]:
+        - generic [ref=e44]: Get 30% On 1st Order Discount
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - textbox "Name" [ref=e49]: Playwright Test
+            - textbox "Email" [active] [ref=e51]: playwrighttest@example.com
+            - combobox [ref=e53]:
+              - option "AFGHANISTAN (+93)"
+              - option "ALBANIA (+355)"
+              - option "ALGERIA (+213)"
+              - option "AMERICAN SAMOA (+168)"
+              - option "ANDORRA (+376)"
+              - option "ANGOLA (+244)"
+              - option "ANGUILLA (+264)"
+              - option "ANTARCTICA (+167)"
+              - option "ANTIGUA AND BARBUDA (+268)"
+              - option "ARGENTINA (+54)"
+              - option "ARMENIA (+374)"
+              - option "ARUBA (+297)"
+              - option "AUSTRALIA (+61)"
+              - option "AUSTRIA (+43)"
+              - option "AZERBAIJAN (+994)"
+              - option "BAHAMAS (+242)"
+              - option "BAHRAIN (+973)"
+              - option "BANGLADESH (+880)"
+              - option "BARBADOS (+246)"
+              - option "BELARUS (+375)"
+              - option "BELGIUM (+32)"
+              - option "BELIZE (+501)"
+              - option "BENIN (+229)"
+              - option "BERMUDA (+441)"
+              - option "BHUTAN (+975)"
+              - option "BOLIVIA (+591)"
+              - option "BOSNIA AND HERZEGOVINA (+387)"
+              - option "BOTSWANA (+267)"
+              - option "BRAZIL (+55)"
+              - option "BRITISH INDIAN OCEAN TERRITORY (+246)"
+              - option "BRUNEI DARUSSALAM (+673)"
+              - option "BULGARIA (+359)"
+              - option "BURKINA FASO (+226)"
+              - option "BURUNDI (+257)"
+              - option "CAMBODIA (+855)"
+              - option "CAMEROON (+237)"
+              - option "CANADA (+1)"
+              - option "CAPE VERDE (+238)"
+              - option "CAYMAN ISLANDS (+345)"
+              - option "CENTRAL AFRICAN REPUBLIC (+236)"
+              - option "CHAD (+235)"
+              - option "CHILE (+56)"
+              - option "CHINA (+86)"
+              - option "CHRISTMAS ISLAND (+672)"
+              - option "COCOS (KEELING) ISLANDS (+672)"
+              - option "COLOMBIA (+57)"
+              - option "COMOROS (+269)"
+              - option "CONGO (+242)"
+              - option "COOK ISLANDS (+682)"
+              - option "COSTA RICA (+506)"
+              - option "COTE D'IVOIRE (+225)"
+              - option "CROATIA (+385)"
+              - option "CUBA (+53)"
+              - option "CYPRUS (+357)"
+              - option "CZECH REPUBLIC (+420)"
+              - option "DENMARK (+45)"
+              - option "DJIBOUTI (+253)"
+              - option "DOMINICA (+176)"
+              - option "DOMINICAN REPUBLIC (+809)"
+              - option "ECUADOR (+593)"
+              - option "EGYPT (+20)"
+              - option "EL SALVADOR (+503)"
+              - option "EQUATORIAL GUINEA (+240)"
+              - option "ERITREA (+291)"
+              - option "ESTONIA (+372)"
+              - option "ETHIOPIA (+251)"
+              - option "FALKLAND ISLANDS (MALVINAS) (+500)"
+              - option "FAROE ISLANDS (+298)"
+              - option "FIJI (+679)"
+              - option "FINLAND (+358)"
+              - option "FRANCE (+33)"
+              - option "FRENCH GUIANA (+594)"
+              - option "FRENCH POLYNESIA (+689)"
+              - option "FRENCH SOUTHERN TERRITORIES (+689)"
+              - option "GABON (+241)"
+              - option "GAMBIA (+220)"
+              - option "GEORGIA (+995)"
+              - option "GERMANY (+49)"
+              - option "GHANA (+233)"
+              - option "GIBRALTAR (+350)"
+              - option "GREECE (+30)"
+              - option "GREENLAND (+299)"
+              - option "GRENADA (+473)"
+              - option "GUADELOUPE (+590)"
+              - option "GUAM (+671)"
+              - option "GUATEMALA (+502)"
+              - option "GUINEA (+224)"
+              - option "GUINEA-BISSAU (+245)"
+              - option "GUYANA (+592)"
+              - option "HAITI (+509)"
+              - option "HOLY SEE (VATICAN CITY STATE) (+39)"
+              - option "HONDURAS (+503)"
+              - option "HONG KONG (+852)"
+              - option "HUNGARY (+36)"
+              - option "ICELAND (+354)"
+              - option "INDIA (+91)"
+              - option "INDONESIA (+62)"
+              - option "IRAN, ISLAMIC REPUBLIC OF (+98)"
+              - option "IRAQ (+964)"
+              - option "IRELAND (+353)"
+              - option "ISRAEL (+972)"
+              - option "ITALY (+39)"
+              - option "JAMAICA (+876)"
+              - option "JAPAN (+81)"
+              - option "JORDAN (+962)"
+              - option "KAZAKHSTAN (+7)"
+              - option "KENYA (+254)"
+              - option "KIRIBATI (+686)"
+              - option "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF (+82)"
+              - option "KOREA, REPUBLIC OF (+82)"
+              - option "KUWAIT (+965)"
+              - option "KYRGYZSTAN (+996)"
+              - option "LAND ISLANDS (+358)"
+              - option "LAO PEOPLE'S DEMOCRATIC REPUBLIC (+856)"
+              - option "LATVIA (+371)"
+              - option "LEBANON (+961)"
+              - option "LESOTHO (+266)"
+              - option "LIBERIA (+231)"
+              - option "LIBYAN ARAB JAMAHIRIYA (+218)"
+              - option "LIECHTENSTEIN (+423)"
+              - option "LITHUANIA (+370)"
+              - option "LUXEMBOURG (+352)"
+              - option "MACAO (+853)"
+              - option "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF (+389)"
+              - option "MADAGASCAR (+261)"
+              - option "MALAWI (+265)"
+              - option "MALAYSIA (+60)"
+              - option "MALDIVES (+960)"
+              - option "MALI (+223)"
+              - option "MALTA (+356)"
+              - option "MARSHALL ISLANDS (+692)"
+              - option "MARTINIQUE (+596)"
+              - option "MAURITANIA (+222)"
+              - option "MAURITIUS (+230)"
+              - option "MAYOTTE (+269)"
+              - option "MEXICO (+52)"
+              - option "MICRONESIA, FEDERATED STATES OF (+691)"
+              - option "MOLDOVA, REPUBLIC OF (+373)"
+              - option "MONACO (+377)"
+              - option "MONGOLIA (+976)"
+              - option "MONTSERRAT (+664)"
+              - option "MOROCCO (+212)"
+              - option "MOZAMBIQUE (+258)"
+              - option "MYANMAR (+95)"
+              - option "NAMIBIA (+264)"
+              - option "NAURU (+674)"
+              - option "NEPAL (+977)"
+              - option "NETHERLANDS (+31)"
+              - option "NETHERLANDS ANTILLES (+599)"
+              - option "NEW CALEDONIA (+687)"
+              - option "NEW ZEALAND (+64)"
+              - option "NICARAGUA (+505)"
+              - option "NIGER (+227)"
+              - option "NIGERIA (+234)"
+              - option "NIUE (+683)"
+              - option "NORFOLK ISLAND (+672)"
+              - option "NORTHERN MARIANA ISLANDS (+167)"
+              - option "NORWAY (+47)"
+              - option "OMAN (+968)"
+              - option "PAKISTAN (+92)"
+              - option "PALAU (+680)"
+              - option "PALESTINIAN TERRITORY, OCCUPIED (+970)"
+              - option "PANAMA (+507)"
+              - option "PAPUA NEW GUINEA (+675)"
+              - option "PARAGUAY (+595)"
+              - option "PERU (+51)"
+              - option "PHILIPPINES (+63)"
+              - option "PITCAIRN (+672)"
+              - option "POLAND (+48)"
+              - option "PORTUGAL (+351)"
+              - option "PUERTO RICO (+787)"
+              - option "QATAR (+974)"
+              - option "REUNION (+262)"
+              - option "ROMANIA (+40)"
+              - option "RUSSIAN FEDERATION (+7)"
+              - option "RWANDA (+250)"
+              - option "SAINT HELENA (+290)"
+              - option "SAINT KITTS AND NEVIS (+186)"
+              - option "SAINT LUCIA (+175)"
+              - option "SAINT PIERRE AND MIQUELON (+508)"
+              - option "SAINT VINCENT AND THE GRENADINES (+180)"
+              - option "SAMOA (+885)"
+              - option "SAN MARINO (+378)"
+              - option "SAO TOME AND PRINCIPE (+239)"
+              - option "SAUDI ARABIA (+966)"
+              - option "SENEGAL (+221)"
+              - option "SERBIA AND MONTENEGRO (+381)"
+              - option "SEYCHELLES (+248)"
+              - option "SIERRA LEONE (+232)"
+              - option "SINGAPORE (+65)"
+              - option "SLOVAKIA (+421)"
+              - option "SLOVENIA (+386)"
+              - option "SOLOMON ISLANDS (+677)"
+              - option "SOMALIA (+252)"
+              - option "SOUTH AFRICA (+27)"
+              - option "SPAIN (+34)"
+              - option "SRI LANKA (+94)"
+              - option "SUDAN (+249)"
+              - option "SURINAME (+597)"
+              - option "SVALBARD AND JAN MAYEN (+47)"
+              - option "SWAZILAND (+268)"
+              - option "SWEDEN (+46)"
+              - option "SWITZERLAND (+41)"
+              - option "SYRIAN ARAB REPUBLIC (+963)"
+              - option "TAIWAN, PROVINCE OF CHINA (+886)"
+              - option "TAJIKISTAN (+992)"
+              - option "TANZANIA, UNITED REPUBLIC OF (+255)"
+              - option "THAILAND (+66)"
+              - option "TIMOR-LESTE (+670)"
+              - option "TOGO (+228)"
+              - option "TOKELAU (+690)"
+              - option "TONGA (+676)"
+              - option "TRINIDAD AND TOBAGO (+186)"
+              - option "TUNISIA (+216)"
+              - option "TURKEY (+90)"
+              - option "TURKMENISTAN (+993)"
+              - option "TURKS AND CAICOS ISLANDS (+164)"
+              - option "TUVALU (+688)"
+              - option "UGANDA (+256)"
+              - option "UKRAINE (+380)"
+              - option "UNITED ARAB EMIRATES (+971)"
+              - option "United Kingdom (+44)" [selected]
+              - option "UNITED STATES (+1)"
+              - option "URUGUAY (+598)"
+              - option "UZBEKISTAN (+998)"
+              - option "VANUATU (+678)"
+              - option "VENEZUELA (+58)"
+              - option "VIETNAM (+84)"
+              - option "VIRGIN ISLANDS, BRITISH (+128)"
+              - option "VIRGIN ISLANDS, U.S. (+134)"
+              - option "WALLIS AND FUTUNA (+681)"
+              - option "WESTERN SAHARA (+212)"
+              - option "YEMEN (+967)"
+              - option "ZAMBIA (+260)"
+              - option "ZIMBABWE (+263)"
+            - textbox "Phone number must be 8 to 14 digits" [ref=e55]:
+              - /placeholder: Phone No
+            - combobox [ref=e57]:
+              - option "Select Service" [selected]
+              - option "Research Proposal"
+              - option "Literature Review"
+              - option "Editing & Proofreading"
+              - option "Formatting"
+              - option "Referencing"
+              - option "Data Analysis"
+              - option "Methodology"
+              - option "Other"
+          - button "Proceed To Signup" [ref=e58] [cursor=pointer]
+  - generic [ref=e61]:
+    - generic [ref=e63]:
+      - heading "Get Quality Dissertation Support from Dissertation Helper that is Designed Around Your Needs" [level=2] [ref=e64]
+      - paragraph [ref=e65]: A dissertation stands as one of the most significant milestones in the academic journey. It demonstrates your ability in research, domain-specific knowledge, subjects, and fields that you have previously studied, as well as your academic writing skills. However, completing a dissertation necessitates meticulous chapter breakdown, data synthesis, analysis, citations, and meeting deadlines. The completion of a dissertation requires thorough multitasking, which can lead to a feeling of being overwhelmed, and the desire to achieve perfection can become a daunting challenge to tackle alone.
+      - link "Write My Dissertation" [ref=e67] [cursor=pointer]:
+        - /url: contact-us
+    - img "Dissertation Writing Services" [ref=e70]
+  - generic [ref=e72]:
+    - generic [ref=e73]:
+      - heading "Why We’re Known as the Best Dissertation Help Agency" [level=2] [ref=e74]
+      - paragraph [ref=e75]: Get the best dissertation writing services Germany at your fingertips with our expert dissertation helpers, making academic success easier, faster, and stress-free.
+    - list [ref=e76]:
+      - listitem [ref=e77]:
+        - img "Topic Selection" [ref=e78]
+        - text: Topic Selection
+      - listitem [ref=e79]:
+        - img "Proposal Writing" [ref=e80]
+        - text: Proposal Writing
+      - listitem [ref=e81]:
+        - img "Dissertation Editing" [ref=e82]
+        - text: Dissertation Editing
+      - listitem [ref=e83]:
+        - img "Dissertation Proofreading" [ref=e84]
+        - text: Dissertation Proofreading
+      - listitem [ref=e85]:
+        - img "Citation Management" [ref=e86]
+        - text: Citation Management
+      - listitem [ref=e87]:
+        - img "Format Styling" [ref=e88]
+        - text: Format Styling
+      - listitem [ref=e89]:
+        - img "Literature Review" [ref=e90]
+        - text: Literature Review
+      - listitem [ref=e91]:
+        - img "Methodology Design" [ref=e92]
+        - text: Methodology Design
+      - listitem [ref=e93]:
+        - img "Data Collection" [ref=e94]
+        - text: Data Collection
+      - listitem [ref=e95]:
+        - img "Data Analysis" [ref=e96]
+        - text: Data Analysis
+      - listitem [ref=e97]:
+        - img "Results Interpretation" [ref=e98]
+        - text: Results Interpretation
+      - listitem [ref=e99]:
+        - img "Conclusion Writing" [ref=e100]
+        - text: Conclusion Writing
+      - listitem [ref=e101]:
+        - img "Plagiarism Check" [ref=e102]
+        - text: Plagiarism Check
+      - listitem [ref=e103]:
+        - img "Abstract Writing" [ref=e104]
+        - text: Abstract Writing
+      - listitem [ref=e105]:
+        - img "Chapter Structuring" [ref=e106]
+        - text: Chapter Structuring
+      - listitem [ref=e107]:
+        - img "Figure Formatting" [ref=e108]
+        - text: Figure Formatting
+      - listitem [ref=e109]:
+        - img "Source Verification" [ref=e110]
+        - text: Source Verification
+      - listitem [ref=e111]:
+        - img "Language Polishing" [ref=e112]
+        - text: Language Polishing
+      - listitem [ref=e113]:
+        - img "Defense Preparation" [ref=e114]
+        - text: Defense Preparation
+      - listitem [ref=e115]:
+        - img "Timeline Planning" [ref=e116]
+        - text: Timeline Planning
+    - link "Request Expert Guidance" [ref=e118] [cursor=pointer]:
+      - /url: contact-us
+  - generic [ref=e120]:
+    - heading "Here’s How Our Winning Formula Helps Students Succeed" [level=3] [ref=e124]
+    - generic [ref=e125]:
+      - generic [ref=e127]:
+        - img "Subject Wise Specialists" [ref=e128]
+        - generic [ref=e129]: Subject-Wise Specialists
+        - paragraph [ref=e130]: From MBA to Nursing, professionals create content for each discipline with the utmost care and understanding.
+      - generic [ref=e132]:
+        - img "Deadline Commitment" [ref=e133]
+        - generic [ref=e134]: Deadline Commitment
+        - paragraph [ref=e135]: Even when under pressure and a narrow time window, quality will never be an issue. Urgent assignments will be delivered on time.
+      - generic [ref=e137]:
+        - img "Guaranteed Originality" [ref=e138]
+        - generic [ref=e139]: Guaranteed Originality
+        - paragraph [ref=e140]: 100% plagiarism-free content checked with advanced tools to maintain authenticity and academic integrity.
+      - generic [ref=e142]:
+        - img "Confidentiality" [ref=e143]
+        - generic [ref=e144]: Confidential & Secure
+        - paragraph [ref=e145]: Information regarding your data, payment details, and personal information will not be shared and will remain private and secure.
+  - generic [ref=e148]:
+    - heading "Certified Dissertation Writing Experts Guiding Your Academic Success" [level=3] [ref=e150]
+    - generic [ref=e151]:
+      - img "Dissertation Writers" [ref=e153]
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - img "Helena Dissertation helper" [ref=e158]
+            - generic [ref=e159]: Helena Krauss
+          - paragraph [ref=e161]: Dr. Krauss leverages social sciences to aid learners in structuring their dissertations by intertwining scholarly rigor, critical analysis, and accessible support for attainable goals, ensuring clarity, confidence, and measurable academic success.
+          - generic [ref=e162]:
+            - paragraph [ref=e164]: "Papers Written: 310+"
+            - paragraph [ref=e166]: "Experience: 12+ Years"
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - img "Adrian Dissertation Writer" [ref=e170]
+            - generic [ref=e171]: Prof. Adrian Vogel
+          - paragraph [ref=e173]: Prof. Vogel aids learners to reach exceptional academic milestones at all levels because he clearly communicates insightful support for all education management and economics dissertations. Vogel is a seasoned researcher in these fields.
+          - generic [ref=e174]:
+            - paragraph [ref=e176]: "Papers Written: 380+"
+            - paragraph [ref=e178]: "Experience: 14 Years"
+        - generic [ref=e179]:
+          - generic [ref=e180]:
+            - img "Clara Dissertation expert" [ref=e182]
+            - generic [ref=e183]: Dr. Clara Hoffmann
+          - paragraph [ref=e185]: Having specialized in psychology and education, Dr. Hoffmann utilizes scholarly knowledge to guide students in developing well-structured, well-analyzed, and impactful dissertations.
+          - generic [ref=e186]:
+            - paragraph [ref=e188]: "Papers Written: 290+"
+            - paragraph [ref=e190]: "Experience: 11 Years"
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - img "Tobias Dissertation Specialist" [ref=e194]
+            - generic [ref=e195]: Tobias Brandt
+          - paragraph [ref=e197]: Dr. Brandt ensures precision and innovation in technical dissertations in the field of engineering and computer science. He helps students cultivate competencies that advance their education and career.
+          - generic [ref=e198]:
+            - paragraph [ref=e200]: "Papers Written: 220+"
+            - paragraph [ref=e202]: "Experience: 9 Years"
+        - link "View All Writers" [ref=e204] [cursor=pointer]:
+          - /url: our-writers
+  - generic [ref=e208]:
+    - heading "Order Dissertation Help Service in Just One Click" [level=3] [ref=e209]
+    - paragraph [ref=e210]: Complete your dissertation without the extra stress.
+    - link "Avail 25% Discount Now" [ref=e212] [cursor=pointer]:
+      - /url: contact-us
+  - generic [ref=e214]:
+    - generic [ref=e215]:
+      - heading "Ready to Nail Every Chapter? Our Dissertation Writing Services Germany Make It Happen" [level=2] [ref=e216]
+      - paragraph [ref=e217]: Get expert dissertation help in Germany for every chapter, from start to finish.
+    - generic [ref=e218]:
+      - tablist [ref=e220]:
+        - tab "Introduction" [selected] [ref=e221] [cursor=pointer]
+        - tab "Literature Review" [ref=e222] [cursor=pointer]
+        - tab "Methodology" [ref=e223] [cursor=pointer]
+        - tab "Data Analysis" [ref=e224] [cursor=pointer]
+        - tab "Discussion" [ref=e225] [cursor=pointer]
+        - tab "Conclusion" [ref=e226] [cursor=pointer]
+      - tabpanel "Introduction" [ref=e229]:
+        - generic [ref=e230]:
+          - text: Introduction
+          - paragraph [ref=e231]: The introduction chapter is the very first part of your dissertation that sets the ground for the whole work. It tells about the background of your research, what makes the topic important, and the aim to achieve.
+          - paragraph [ref=e232]: A well-written introduction builds the reader’s interest while allowing them to present the research problem. With our expert dissertation help, students will develop introductions that are engaging, precise, and academically strong. This will ensure a solid foundation for your research.
+  - generic [ref=e234]:
+    - generic [ref=e237]:
+      - text: Where Students Find Success
+      - heading "See What Students Achieved with Our Dissertation Help in Germany" [level=2] [ref=e238]
+      - paragraph [ref=e239]: The real feedback from our students shows our dedication we put into your work. All this is because we want you to get the grades you’ve always wished for.
+    - region [ref=e240]:
+      - generic [ref=e241]:
+        - tabpanel "1 of 6" [ref=e242]:
+          - generic [ref=e244]:
+            - img "Elsa" [ref=e246]
+            - img "Rating" [ref=e249]
+            - paragraph [ref=e251]: I was completely lost with my dissertation proposal until I found this service. They structured my ideas perfectly, and my supervisor finally approved it without revisions.
+            - generic [ref=e252]: Elsa Müller
+        - tabpanel "2 of 6" [ref=e253]:
+          - generic [ref=e255]:
+            - img "Jonas Weber" [ref=e257]
+            - img "Rating" [ref=e260]
+            - paragraph [ref=e262]: The literature review was the hardest part for me. This team delivered a comprehensive, well-cited chapter that impressed my professor. Saved me weeks of stress.
+            - generic [ref=e263]: Jonas Weber
+        - tabpanel "3 of 6" [ref=e264]:
+          - generic [ref=e266]:
+            - img "Lea Schneider" [ref=e268]
+            - img "Rating" [ref=e271]
+            - paragraph [ref=e273]: Balancing my nursing shifts and dissertation was overwhelming. Their nursing dissertation experts really understood the field and created a paper that was both practical and academic.
+            - generic [ref=e274]: Lea Schneider
+        - tabpanel [aria-hidden] [ref=e275]:
+          - generic [ref=e277]:
+            - paragraph [ref=e284]: German law dissertations can be brutal with all the case references. The writers handled it flawlessly, citing every source correctly. My grade was higher than I expected.
+            - generic [ref=e285]: Felix Bauer
+        - tabpanel [aria-hidden] [ref=e286]:
+          - generic [ref=e288]:
+            - paragraph [ref=e295]: As an MBA student, I needed a dissertation that blended theory with real-world data. They delivered exactly that — polished, data-driven, and professional.
+            - generic [ref=e296]: Sophia Wagner
+        - tabpanel [aria-hidden] [ref=e297]:
+          - generic [ref=e299]:
+            - paragraph [ref=e306]: My psychology dissertation required original research and analysis. The writer not only guided me with the methodology but also presented the findings clearly. My committee was really impressed.
+            - generic [ref=e307]: Lukas Hoffmann
+      - tablist "Select a slide to show":
+        - tab "Go to page 1" [selected] [ref=e308] [cursor=pointer]
+        - tab "Go to page 2" [ref=e309] [cursor=pointer]
+    - link "View All Reviews" [ref=e311] [cursor=pointer]:
+      - /url: reviews
+  - generic [ref=e314]:
+    - img "Dissertation Support" [ref=e317]
+    - generic [ref=e318]:
+      - generic [ref=e319]: FAQs
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - heading [level=2] [ref=e322]:
+            - 'button "Q1: Why trust your dissertation writing services? Is it authentic?" [expanded] [ref=e323] [cursor=pointer]'
+          - 'generic "Q1: Why trust your dissertation writing services? Is it authentic?" [ref=e324]':
+            - paragraph [ref=e326]: Ans. The dissertation writing services Germany we offer are 100% authentic. Students will receive an original, plagiarism-free dissertation that is backed by expert writers, secure processes, and strong confidentiality, ensuring trustworthy academic support that you can rely on.
+        - heading [level=2] [ref=e328]:
+          - 'button "Q2: How much do your dissertation writing services cost?" [ref=e329] [cursor=pointer]'
+        - heading [level=2] [ref=e331]:
+          - 'button "Q3: Who can help me write my dissertation? Are all the writers qualified?" [ref=e332] [cursor=pointer]'
+        - heading [level=2] [ref=e334]:
+          - 'button "Q4: Does your agency also offer editing and proofreading services?" [ref=e335] [cursor=pointer]'
+        - heading [level=3] [ref=e337]:
+          - 'button "Q5: What if my dissertation is rejected by the professor?" [ref=e338] [cursor=pointer]'
+        - heading [level=3] [ref=e340]:
+          - 'button "Q6: What payment methods does your company accept?" [ref=e341] [cursor=pointer]'
+  - generic [ref=e344]:
+    - generic [ref=e346]:
+      - heading "The Crucial Importance of Dissertation Writing Help for International Students in Germany" [level=2] [ref=e347]
+      - paragraph [ref=e348]: Many students don’t know the fact that in most German universities, the dissertation alone can decide more than 40% of your final grade. Think of your dissertation as the most intense undertaking of your scholarly life. It requires months of strategizing, hours of exhaustive research, and the acute ability to express concepts clearly. Unlike essays or exams, this project has no possible lifts.
+      - paragraph [ref=e349]: Students often travel to Germany to continue their studies. And while the country has its appeal, it also has a rigid educational framework. Professors expect thorough and original work, and the mark allocation does not have a tolerance for blunders. This is the reason why Dissertation Helper in Germany exists. Students at the PhD, Master’s, and Graduate levels can receive thorough help, starting from the research phase all the way to the polishing of the final draft. We ensure that your work is compliant with the German academic standards and that your grades are safeguarded.
+      - heading "Student-Centered Dissertation Writing Service Germany for Every Stage of Research" [level=2] [ref=e350]
+      - paragraph [ref=e351]: No two dissertations are similar – every student, subject, and institution come with different requirements. This is exactly why we never devise one-size-fits-all strategies. When students pay for dissertation, we aim to meet their academic goals with respect to their university’s expectations by writing bespoke custom dissertations. The starting step, to work on and select the appropriate topics and research questions, is the hardest for most learners. No matter what stage you are on, dissertation help services will guide you to regain your focus and prevent you from wasting time.
+      - paragraph [ref=e352]: "With every project, our PhD dissertation writing services aim to assist you in a way that truly elevates your work. Subject matter insight and a custom-tailored approach are always there so that the dissertation journey for learners is not only easier, less stressful, and more rewarding, but one that is filled with joy. Here’s how dissertation help online can add value to your academic success:"
+      - list [ref=e353]:
+        - listitem [ref=e354]: Tailored strategies that match your academic level and research needs.
+        - listitem [ref=e355]: Flexible help dissertation designed around your timeline, goals, and challenges.
+        - listitem [ref=e356]: Expert inputs to ensure accurate analysis, evidence, and well-supported arguments.
+        - listitem [ref=e357]: Clear structure that connects chapters smoothly for professional presentation.
+        - listitem [ref=e358]: Guidance that solidifies your voice while meeting strict academic standards.
+      - paragraph [ref=e359]: We also offer dissertation proposal services that are designed to help students create strong, well-structured proposals that impress supervisors and lay the foundation for a successful dissertation.
+      - heading "How Our Dissertation Help Online Supports Your Research and Findings" [level=2] [ref=e360]
+      - paragraph [ref=e361]: Carrying out research is the toughest part of a dissertation. Not only finding relevant sources is important, but applying the right methods and tools to gather meaningful results is also crucial. That’s where our specialized dissertation help company comes in to offer research and data analysis support.
+      - paragraph [ref=e362]: Our dissertation help assists students in developing and conducting original research that aligns with German academic criteria and institutional ethics. It does not matter if your project includes quantitative approaches such as surveys and modeling, or qualitative methods like interviews and thematic analysis; we provide guidance at all levels. Our team offering help writing dissertation has the necessary skills with professional software such as SPSS, NVivo, R, and MATLAB, meaning all complex data sets can be handled with precision.
+    - generic [ref=e364]:
+      - paragraph [ref=e365]: It is not only analysis that we do, but the dissertation writing services we offer also assist students in interpreting the results and formulating academically robust, clear, and concise outputs. Most importantly, dissertation help train students on the issues so that they can confidently defend the work during the viva examinations.
+      - heading "Our Help with Dissertation in Germany Covers What Students Usually Overlook" [level=3] [ref=e366]
+      - paragraph [ref=e367]: Some aspects often go ignored by students when working on a dissertation– but never by our dissertation writing experts. In a dissertation, there are small but critical details that matter a lot. A dissertation is judged on more than just research and writing, yet many of these aspects are often overlooked by students.
+      - text: Formatting is graded
+      - paragraph [ref=e368]: It's not just about the tidiness, but German universities have strict rules on font size, margins, spacing, and even how tables and figures are placed. Ignoring them can cost marks.
+      - text: Referencing is a minefield
+      - paragraph [ref=e369]: Even if there is a single incorrect citation or a missing page number, it can raise plagiarism concerns. Our examiners are trained to notice all these details.
+      - text: Originality isn’t just about avoiding copy-paste
+      - paragraph [ref=e370]: Making use of own old work (self-plagiarism) or writing too similar to the published material without proper paraphrasing can also cause penalties.
+      - text: Structure impacts evaluation
+      - paragraph [ref=e371]: Examiners not only read the content, but they also check whether the argument you made flows logically and whether your findings link back to the research question.
+      - paragraph [ref=e372]: When students approach our professionals with the request ‘write my dissertation for me,’ the team of professionals ensures that all these aspects are taken into account. Students can also hire our professional PhD thesis writers in Germany for comprehensive guidance, from topic selection to final submission, ensuring quality research, academic accuracy, and timely delivery across all disciplines.
+      - heading "Dissertation Writing Assistance Ensuring Zero Errors and 100% Originality" [level=3] [ref=e373]
+      - paragraph [ref=e374]: Any dissertation can go to waste if it is riddled with mistakes or lacks precision, regardless of how well it is researched. For this reason, our bachelor's and Master’s dissertation help offers specialized editing, as well as proofreading, of clarity and precision at all levels. Dissertations are sharpened for clarity, appropriate language, tone, structure, and all arguments to be cohesive. Our dissertation editing and proofreading aid goes beyond the basics and incorporates thorough checks of grammar, spelling, punctuation, and consistent formatting, including academic style compliance. The use of proper academic styles is critical, be it APA, MLA, Harvard, Chicago, or specific German university styles, and we guarantee accuracy at each reference and citation.
+      - paragraph [ref=e375]: "To protect students' academic integrity, dissertation editors carry out plagiarism scans using advanced tools. At the end, you’ll get a detailed report showing that your work is 100% original, giving peace of mind before submission. Dissertationhelper.de deliver refined and polished work that meets the strict standards in Germany. The results: You will get a dissertation that is clear, professional, and fully ready to impress examiners."
+      - paragraph [ref=e376]: Our dissertation writing service has already assisted numerous students from leading German universities such as Ludwig Maximilian University of Munich, Heidelberg University, University of Hamburg, and Technical University of Berlin. Many students from these institutions have benefited from our PhD and bachelor's dissertation help by achieving improved grades, enhanced confidence, and streamlined, stress-free submissions.
+  - generic [ref=e379]:
+    - generic [ref=e380]: Expert Support Across All Disciplines, Institutions, and Academic Stages
+    - generic [ref=e385]:
+      - tablist [ref=e386]:
+        - tab "Subject Covered" [selected] [ref=e387] [cursor=pointer]
+        - tab "Top Institutions We Cover" [ref=e388] [cursor=pointer]
+        - tab "Academic Levels We Cover" [ref=e389] [cursor=pointer]
+      - tabpanel [ref=e391]:
+        - generic [ref=e394]:
+          - list [ref=e396]:
+            - listitem [ref=e397]: Business & Management
+            - listitem [ref=e399]: Marketing
+            - listitem [ref=e401]: Finance & Accounting
+            - listitem [ref=e403]: Economics
+            - listitem [ref=e405]: Law
+            - listitem [ref=e407]: Nursing & Healthcare
+            - listitem [ref=e409]: Medicine & Life Sciences
+            - listitem [ref=e411]: Psychology
+          - list [ref=e414]:
+            - listitem [ref=e415]: Sociology
+            - listitem [ref=e417]: Education
+            - listitem [ref=e419]: Engineering
+            - listitem [ref=e421]: Computer Science & IT
+            - listitem [ref=e423]: Literature & English Studies
+            - listitem [ref=e425]: History
+            - listitem [ref=e427]: Political Science
+    - generic [ref=e430]:
+      - text: Check Affordable Prices
+      - list [ref=e431]:
+        - listitem [ref=e432]:
+          - text: Formatting
+          - generic [ref=e433]: €05.00/Page FREE
+        - listitem [ref=e434]:
+          - text: Plagiarism Report
+          - generic [ref=e435]: €06/Page FREE
+        - listitem [ref=e436]:
+          - text: Title Page
+          - generic [ref=e437]: €10/Page FREE
+        - listitem [ref=e438]:
+          - text: Editing and Proofreading
+          - generic [ref=e439]: €15/Page FREE
+        - listitem
+      - link "Free Assistance" [ref=e441] [cursor=pointer]:
+        - /url: javascript:void(Tawk_API.toggle())
+  - generic [ref=e444]:
+    - generic [ref=e445]: Dissertation Helper – Trusted by Students Everywhere.
+    - link "Chat Now" [ref=e450] [cursor=pointer]:
+      - /url: javascript:void(Tawk_API.toggle())
+  - contentinfo [ref=e451]:
+    - generic [ref=e453]:
+      - generic [ref=e454]:
+        - generic [ref=e455]:
+          - link [ref=e456] [cursor=pointer]:
+            - /url: https://dissertationhelper.de/
+            - img "Dissertation Helper Logo" [ref=e457]
+          - paragraph [ref=e458]: Dissertationhelper.de offers expert support for students worldwide. From research to final submission, we ensure quality, affordability, and on-time delivery. Choose our dissertation writing services today and make your dissertation stress-free.
+        - generic [ref=e459]:
+          - link [ref=e460] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61580870003138
+          - link [ref=e462] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=441515289103
+          - link [ref=e464] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/dissertation-helper-germany/
+      - generic [ref=e467]:
+        - text: Quick Links
+        - list [ref=e469]:
+          - listitem [ref=e470]:
+            - link "Home" [ref=e471] [cursor=pointer]:
+              - /url: https://dissertationhelper.de/
+          - listitem [ref=e472]:
+            - link "About Us" [ref=e473] [cursor=pointer]:
+              - /url: about-us
+          - listitem [ref=e474]:
+            - link "Reviews" [ref=e475] [cursor=pointer]:
+              - /url: reviews
+          - listitem [ref=e476]:
+            - link "Blog" [ref=e477] [cursor=pointer]:
+              - /url: https://dissertationhelper.de/blog/
+          - listitem [ref=e478]:
+            - link "Contact Us" [ref=e479] [cursor=pointer]:
+              - /url: contact-us
+          - listitem [ref=e480]:
+            - link "Our Writers" [ref=e481] [cursor=pointer]:
+              - /url: our-writers
+      - generic [ref=e483]:
+        - text: Services
+        - list [ref=e485]:
+          - listitem [ref=e486]:
+            - link "Dissertation Editing & Proofreading" [ref=e487] [cursor=pointer]:
+              - /url: dissertation-editing-proofreading
+          - listitem [ref=e488]:
+            - link "Research Proposal Writing Services" [ref=e489] [cursor=pointer]:
+              - /url: research-proposal-writing-services
+      - generic [ref=e491]:
+        - text: Connect With Us
+        - list [ref=e492]:
+          - listitem [ref=e493]:
+            - link [ref=e494] [cursor=pointer]:
+              - /url: javascript:void(Tawk_API.toggle())
+          - listitem [ref=e497]:
+            - link [ref=e498] [cursor=pointer]:
+              - /url: mailto:info@dissertationhelper.de
+          - listitem [ref=e501]:
+            - link [ref=e502] [cursor=pointer]:
+              - /url: https://api.whatsapp.com/send?phone=441515289103
+      - paragraph [ref=e510]: Copyright © 2026 Dissertation Helper. All Rights Reserved.
+```
+
+# Test source
+
+```ts
+  1  | /* Exercise 5 — Real SQA Challenge 🔥
+  2  | Take your signup flow.
+  3  | Create this sequence:
+  4  | Open website
+  5  |      ↓
+  6  | Find signup form
+  7  |      ↓
+  8  | Fill name
+  9  |      ↓
+  10 | Fill email
+  11 |      ↓
+  12 | Fill phone
+  13 |      ↓
+  14 | Click submit
+  15 |      ↓
+  16 | Wait for successful result
+  17 |      ↓
+  18 | Assert success/thank-you message
+  19 | Rule:
+  20 | Do NOT use waitForTimeout() anywhere.
+  21 | Use:
+  22 | auto-waiting
+  23 | locators
+  24 | assertions
+  25 | event/response waits where appropriate
+  26 | */
+  27 | import {test, expect} from "@playwright/test";
+  28 | test("Real SQA Challenge", async({page})=>{
+  29 |     await page.goto("https://dissertationhelper.de/");
+  30 |     
+  31 |     const signupForm = page.locator("form").first();
+  32 |     await signupForm.locator('input[name="name"]').fill("Playwright Test");
+  33 |     await signupForm .locator('input[name="email"]') .fill("playwrighttest@example.com");
+> 34 |     await signupForm .locator('input[name="phone"]') .fill("03001234567");
+     |                                                       ^ Error: locator.fill: Test timeout of 30000ms exceeded.
+  35 |     const submitButton = signupForm.getByRole("button", { name: /Proceed To Signup/i });
+  36 |     await expect(submitButton).toBeVisible(); await expect(submitButton).toBeEnabled();
+  37 |     await submitButton.click();
+  38 | 
+  39 |     await expect( page.getByText(/thank you|success|successfully/i).first() ).toBeVisible();
+  40 |     
+  41 | })
+```
